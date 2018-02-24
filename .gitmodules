@@ -1,0 +1,3 @@
+[submodule "oksse"]
+	path = oksse
+	url = git@github.com:kinfoundation/oksse.git
