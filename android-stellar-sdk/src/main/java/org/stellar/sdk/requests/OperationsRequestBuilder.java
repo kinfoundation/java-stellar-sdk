@@ -1,6 +1,7 @@
 package org.stellar.sdk.requests;
 
 import com.google.gson.reflect.TypeToken;
+import com.here.oksse.ServerSentEvent;
 
 import org.stellar.sdk.KeyPair;
 import org.stellar.sdk.responses.Page;
@@ -85,6 +86,24 @@ public class OperationsRequestBuilder extends RequestBuilder {
     ResponseHandler<Page<OperationResponse>> responseHandler = new ResponseHandler<Page<OperationResponse>>(type);
     return responseHandler.handleGetRequest(uri);
   }
+
+  /**
+   * Allows to stream SSE events from horizon.
+   * Certain endpoints in Horizon can be called in streaming mode using Server-Sent Events.
+   * This mode will keep the connection to horizon open and horizon will continue to return
+   * responses as ledgers close.
+   *
+   * @param listener {@link EventListener} implementation with {@link OperationResponse} type
+   * @return ServerSentEvent object, so you can <code>close()</code> connection when not needed anymore
+   * @see <a href="http://www.w3.org/TR/eventsource/" target="_blank">Server-Sent Events</a>
+   * @see <a href="https://www.stellar.org/developers/horizon/learn/responses.html" target="_blank">Response Format documentation</a>
+   */
+  public ServerSentEvent stream(final EventListener<OperationResponse> listener) {
+    return new StreamHandler<>(new TypeToken<OperationResponse>() {
+    })
+            .handleStream(this.buildUri(), listener);
+  }
+
 
   /**
    * Build and execute request.
