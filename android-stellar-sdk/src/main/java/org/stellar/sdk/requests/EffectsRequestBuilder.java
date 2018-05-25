@@ -1,15 +1,18 @@
 package org.stellar.sdk.requests;
 
-import static org.stellar.sdk.Util.checkNotNull;
-
 import com.google.gson.reflect.TypeToken;
 import com.here.oksse.ServerSentEvent;
-import java.io.IOException;
-import java.net.URI;
-import okhttp3.OkHttpClient;
+
 import org.stellar.sdk.KeyPair;
 import org.stellar.sdk.responses.Page;
 import org.stellar.sdk.responses.effects.EffectResponse;
+
+import java.io.IOException;
+import java.net.URI;
+
+import okhttp3.OkHttpClient;
+
+import static org.stellar.sdk.Util.checkNotNull;
 
 /**
  * Builds requests connected to effects.
@@ -98,7 +101,7 @@ public class EffectsRequestBuilder extends RequestBuilder {
    * @throws IOException
    */
   public Page<EffectResponse> execute() throws IOException, TooManyRequestsException {
-    return this.execute(httpClient, this.buildUri());
+    return execute(httpClient, this.buildUri());
   }
 
   @Override

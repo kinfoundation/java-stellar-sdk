@@ -1,14 +1,17 @@
 package org.stellar.sdk.requests;
 
 import com.google.gson.reflect.TypeToken;
-import java.io.IOException;
-import java.net.URI;
-import okhttp3.OkHttpClient;
+
 import org.stellar.sdk.Asset;
 import org.stellar.sdk.AssetTypeCreditAlphaNum;
 import org.stellar.sdk.KeyPair;
 import org.stellar.sdk.responses.Page;
 import org.stellar.sdk.responses.PathResponse;
+
+import java.io.IOException;
+import java.net.URI;
+
+import okhttp3.OkHttpClient;
 
 /**
  * Builds requests connected to paths.
@@ -60,6 +63,6 @@ public class PathsRequestBuilder extends RequestBuilder {
    * @throws IOException
    */
   public Page<PathResponse> execute() throws IOException, TooManyRequestsException {
-    return this.execute(httpClient, this.buildUri());
+    return execute(httpClient, this.buildUri());
   }
 }

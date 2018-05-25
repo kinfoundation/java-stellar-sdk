@@ -1,7 +1,10 @@
 package org.stellar.sdk;
 
-import static org.stellar.sdk.Util.checkArgument;
-import static org.stellar.sdk.Util.checkNotNull;
+import org.apache.commons.android.codec.binary.Base64;
+import org.stellar.sdk.xdr.DecoratedSignature;
+import org.stellar.sdk.xdr.EnvelopeType;
+import org.stellar.sdk.xdr.SignatureHint;
+import org.stellar.sdk.xdr.XdrDataOutputStream;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -10,11 +13,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import org.apache.commons.android.codec.binary.Base64;
-import org.stellar.sdk.xdr.DecoratedSignature;
-import org.stellar.sdk.xdr.EnvelopeType;
-import org.stellar.sdk.xdr.SignatureHint;
-import org.stellar.sdk.xdr.XdrDataOutputStream;
+
+import static org.stellar.sdk.Util.checkArgument;
+import static org.stellar.sdk.Util.checkNotNull;
 
 
 /**

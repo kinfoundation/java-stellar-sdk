@@ -2,12 +2,15 @@ package org.stellar.sdk.responses;
 
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.reflect.TypeToken;
+
+import org.stellar.sdk.requests.ResponseHandler;
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
+
 import okhttp3.OkHttpClient;
-import org.stellar.sdk.requests.ResponseHandler;
 
 /**
  * Represents page of objects.

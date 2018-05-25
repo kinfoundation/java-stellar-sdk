@@ -2,12 +2,15 @@ package org.stellar.sdk.requests;
 
 import com.google.gson.reflect.TypeToken;
 import com.here.oksse.ServerSentEvent;
-import java.io.IOException;
-import java.net.URI;
-import okhttp3.OkHttpClient;
+
 import org.stellar.sdk.KeyPair;
 import org.stellar.sdk.responses.AccountResponse;
 import org.stellar.sdk.responses.Page;
+
+import java.io.IOException;
+import java.net.URI;
+
+import okhttp3.OkHttpClient;
 
 /**
  * Builds requests connected to accounts.
@@ -77,7 +80,7 @@ public class AccountsRequestBuilder extends RequestBuilder {
    * @throws IOException
    */
   public Page<AccountResponse> execute() throws IOException, TooManyRequestsException {
-    return this.execute(httpClient, this.buildUri());
+    return execute(httpClient, this.buildUri());
   }
 
   @Override

@@ -1,13 +1,13 @@
 package org.stellar.sdk;
 
-import static org.stellar.sdk.Util.checkNotNull;
-
 import org.stellar.sdk.xdr.AccountID;
 import org.stellar.sdk.xdr.OperationType;
 import org.stellar.sdk.xdr.SetOptionsOp;
 import org.stellar.sdk.xdr.SignerKey;
 import org.stellar.sdk.xdr.String32;
 import org.stellar.sdk.xdr.Uint32;
+
+import static org.stellar.sdk.Util.checkNotNull;
 
 /**
  * Represents <a href="https://www.stellar.org/developers/learn/concepts/list-of-operations.html#set-options">SetOptions</a> operation.

@@ -1,11 +1,12 @@
 package org.stellar.sdk.responses;
 
-import static org.stellar.sdk.Util.checkNotNull;
-
 import com.google.gson.annotations.SerializedName;
+
 import org.stellar.sdk.Asset;
 import org.stellar.sdk.AssetTypeNative;
 import org.stellar.sdk.KeyPair;
+
+import static org.stellar.sdk.Util.checkNotNull;
 
 /**
  * Represents account response.

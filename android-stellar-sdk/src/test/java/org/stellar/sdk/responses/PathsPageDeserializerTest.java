@@ -1,16 +1,19 @@
 package org.stellar.sdk.responses;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
-
 import com.google.gson.reflect.TypeToken;
-import java.io.IOException;
-import java.net.URISyntaxException;
-import okhttp3.OkHttpClient;
+
 import org.junit.Assert;
 import org.junit.Test;
 import org.stellar.sdk.Asset;
 import org.stellar.sdk.KeyPair;
+
+import java.io.IOException;
+import java.net.URISyntaxException;
+
+import okhttp3.OkHttpClient;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 
 public class PathsPageDeserializerTest {
 

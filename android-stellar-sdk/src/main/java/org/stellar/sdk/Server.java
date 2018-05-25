@@ -1,16 +1,7 @@
 package org.stellar.sdk;
 
 import android.net.Uri;
-import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.util.concurrent.TimeUnit;
-import okhttp3.FormBody;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.RequestBody;
-import okhttp3.Response;
-import okhttp3.ResponseBody;
+
 import org.stellar.sdk.requests.AccountsRequestBuilder;
 import org.stellar.sdk.requests.EffectsRequestBuilder;
 import org.stellar.sdk.requests.LedgersRequestBuilder;
@@ -23,6 +14,18 @@ import org.stellar.sdk.requests.TradesRequestBuilder;
 import org.stellar.sdk.requests.TransactionsRequestBuilder;
 import org.stellar.sdk.responses.GsonSingleton;
 import org.stellar.sdk.responses.SubmitTransactionResponse;
+
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.concurrent.TimeUnit;
+
+import okhttp3.FormBody;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
+import okhttp3.ResponseBody;
 
 /**
  * Main class used to connect to Horizon server.

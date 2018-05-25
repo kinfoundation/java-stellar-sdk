@@ -2,11 +2,10 @@ package org.stellar.sdk.responses;
 
 import junit.framework.TestCase;
 
+import org.junit.Test;
 import org.stellar.sdk.Asset;
 import org.stellar.sdk.AssetTypeNative;
 import org.stellar.sdk.KeyPair;
-
-import org.junit.Test;
 import org.stellar.sdk.responses.operations.AccountMergeOperationResponse;
 import org.stellar.sdk.responses.operations.AllowTrustOperationResponse;
 import org.stellar.sdk.responses.operations.ChangeTrustOperationResponse;

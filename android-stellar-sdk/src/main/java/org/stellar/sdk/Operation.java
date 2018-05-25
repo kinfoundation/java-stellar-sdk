@@ -1,13 +1,14 @@
 package org.stellar.sdk;
 
-import static org.stellar.sdk.Util.checkNotNull;
+import org.apache.commons.android.codec.binary.Base64;
+import org.stellar.sdk.xdr.AccountID;
+import org.stellar.sdk.xdr.XdrDataOutputStream;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.math.BigDecimal;
-import org.apache.commons.android.codec.binary.Base64;
-import org.stellar.sdk.xdr.AccountID;
-import org.stellar.sdk.xdr.XdrDataOutputStream;
+
+import static org.stellar.sdk.Util.checkNotNull;
 
 /**
  * Abstract class for operations.

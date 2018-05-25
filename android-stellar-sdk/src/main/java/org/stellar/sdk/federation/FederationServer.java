@@ -1,17 +1,21 @@
 package org.stellar.sdk.federation;
 
 import android.net.Uri;
+
 import com.google.gson.reflect.TypeToken;
 import com.moandjiezana.toml.Toml;
+
+import org.stellar.sdk.requests.ResponseHandler;
+import org.stellar.sdk.responses.HttpResponseException;
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
+
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 import okhttp3.ResponseBody;
-import org.stellar.sdk.requests.ResponseHandler;
-import org.stellar.sdk.responses.HttpResponseException;
 
 /**
  * FederationServer handles a network connection to a

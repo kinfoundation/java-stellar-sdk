@@ -1,15 +1,18 @@
 package org.stellar.sdk.requests;
 
 import com.google.gson.reflect.TypeToken;
-import java.io.IOException;
-import java.net.URI;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.ResponseBody;
+
 import org.stellar.sdk.responses.ClientProtocolException;
 import org.stellar.sdk.responses.GsonSingleton;
 import org.stellar.sdk.responses.HttpResponseException;
 import org.stellar.sdk.responses.Response;
+
+import java.io.IOException;
+import java.net.URI;
+
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.ResponseBody;
 
 public class ResponseHandler<T> {
 

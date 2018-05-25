@@ -1,6 +1,7 @@
 package org.stellar.sdk.responses;
 
 import com.google.gson.annotations.SerializedName;
+
 import org.stellar.sdk.KeyPair;
 
 /**

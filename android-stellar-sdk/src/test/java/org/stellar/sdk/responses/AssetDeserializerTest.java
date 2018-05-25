@@ -1,6 +1,7 @@
 package org.stellar.sdk.responses;
 
 import junit.framework.TestCase;
+
 import org.junit.Test;
 import org.stellar.sdk.Asset;
 import org.stellar.sdk.AssetTypeCreditAlphaNum;

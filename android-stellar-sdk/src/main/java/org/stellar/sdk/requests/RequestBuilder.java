@@ -1,8 +1,10 @@
 package org.stellar.sdk.requests;
 
 import android.net.Uri;
+
 import java.net.URI;
 import java.util.ArrayList;
+
 import okhttp3.OkHttpClient;
 
 /**
