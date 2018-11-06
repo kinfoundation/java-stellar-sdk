@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import org.stellar.sdk.KeyPair;
 import org.stellar.sdk.Server;
-import org.stellar.sdk.responses.AccountResponse;
+import kin.base.responses.AccountResponse;
 
 import java.io.IOException;
 import java.net.URI;

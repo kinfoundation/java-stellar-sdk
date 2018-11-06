@@ -7,7 +7,7 @@ if [ ! -d "javadoc" ]; then
 fi
 
 rm -rf javadoc/* # Remove all files without hidden (.git)
-javadoc -public -splitindex -windowtitle "java-stellar-sdk documentation" -d ./javadoc -sourcepath ./src/main/java/ -subpackages org.stellar.sdk -exclude org.stellar.sdk.xdr
+javadoc -public -splitindex -windowtitle "java-stellar-sdk documentation" -d ./javadoc -sourcepath ./src/main/java/ -subpackages org.stellar.sdk -exclude kin.base.xdr
 cd javadoc
 git add .
 git commit -m $TRAVIS_TAG
